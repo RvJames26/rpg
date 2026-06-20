@@ -1,2 +1,3 @@
 # rpg
-first time learn python (OOP) RPG text game
+OOP final project
+Source code originally from: https://github.com/boseagr/rpg
