@@ -126,7 +126,7 @@ while game_running:
         elif command == 'give':
             if my_item is None:
                 print('You have no item to give to ' + inhabitant.name)
-            elif isinstance(inhabitant, Enemy):        
+            elif isinstance(inhabitant, learnrpg.Enemy):
                 print(inhabitant.name + ' is hate you, ' + inhabitant.name + " don't want anything from you")
             else:
                 print('You give ' + my_item.get_name() + ' to ' + inhabitant.name)
@@ -138,7 +138,7 @@ while game_running:
                     sleep(1)
         elif command == 'fight':
             sleep(0.2)
-            if isinstance(inhabitant, Friend):
+            if isinstance(inhabitant, learnrpg.Friend):
                 inhabitant.fight('love')
             elif my_item is None:
                 print('You have no item to fight ' + inhabitant.name)
